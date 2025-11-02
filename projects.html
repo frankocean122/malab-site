@@ -1,0 +1,15 @@
+---
+title: 项目
+layout: default
+---
+
+<h2>研究项目</h2>
+<div class="list">
+{% for proj in site.data.projects %}
+  <div class="item">
+    <h3>{{ proj.title }} ({{ proj.year }})</h3>
+    <p>{{ proj.description }}</p>
+    <p><strong>成员：</strong>{{ proj.members | join: ", " }}</p>
+  </div>
+{% endfor %}
+</div>

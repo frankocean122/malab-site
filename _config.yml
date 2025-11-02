@@ -1,0 +1,12 @@
+title: "MaLAB"
+description: "致力于用人工智能与分子建模推动药物发现"
+baseurl: ""
+url: "https://USERNAME.github.io"
+theme: null
+markdown: kramdown
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"

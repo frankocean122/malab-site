@@ -1,0 +1,23 @@
+---
+title: "首页"
+layout: default
+---
+
+<section class="hero">
+  <div class="hero-content">
+    <img src="assets/logo-placeholder.png" alt="MaLAB logo" class="lab-logo">
+    <h2>欢迎来到 {{ site.title }}</h2>
+    <p>{{ site.description }}</p>
+  </div>
+</section>
+
+<section>
+  <h3>近期论文</h3>
+  <ul>
+  {% for paper in site.data.papers limit:3 %}
+    <li>
+      <a href="{{ paper.link }}">{{ paper.title }}</a> - {{ paper.authors }} ({{ paper.year }})
+    </li>
+  {% endfor %}
+  </ul>
+</section>

@@ -1,0 +1,14 @@
+---
+title: 论文
+layout: default
+---
+
+<h2>发表论文</h2>
+<ul>
+{% for paper in site.data.papers %}
+  <li>
+    <a href="{{ paper.link }}">{{ paper.title }}</a><br>
+    <small>{{ paper.authors }} — <em>{{ paper.journal }}</em>, {{ paper.year }}</small>
+  </li>
+{% endfor %}
+</ul>

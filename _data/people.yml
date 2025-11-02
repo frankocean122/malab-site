@@ -1,0 +1,10 @@
+- name: 马大程
+  title: 教授 (PI)
+  email: contact@lab.edu
+  image: assets/members/madacheng.jpg
+  research: 人工智能驱动的药物发现
+
+- name: 李华
+  title: 博士生
+  email: lihua@lab.edu
+  research: 分子生成模型与结构预测

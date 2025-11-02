@@ -1,0 +1,19 @@
+---
+title: 团队成员
+layout: default
+---
+
+<h2>团队成员</h2>
+<div class="grid">
+{% for p in site.data.people %}
+  <div class="card">
+    {% if p.image %}
+      <img src="{{ p.image | relative_url }}" alt="{{ p.name }}">
+    {% endif %}
+    <h3>{{ p.name }}</h3>
+    <p>{{ p.title }}</p>
+    <p>{{ p.research }}</p>
+    <p><a href="mailto:{{ p.email }}">{{ p.email }}</a></p>
+  </div>
+{% endfor %}
+</div>
